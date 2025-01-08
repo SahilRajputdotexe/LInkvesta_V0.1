@@ -96,14 +96,14 @@ export default function Home() {
 
   </div>
 
-  <div className="flex items-center justify-center w-full flex-col lg:flex-row pt-32 pb-32">
+  <div className="flex items-center justify-center w-full flex-col lg:flex-row pt-24 pb-24">
     <div className="flex lg:block justify-center items-cemter  p-16">
     <PhoneMockup />
     </div>
     <div className="h-full w-full">
-    <div className="pt-12 w-full justify-center items-center flex flex-col ">
-    <div className="text-cyan-600 text-2xl pb-8 pt-8 font-bold ">All Organic</div>
-    <h1 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 pb-8 ">
+    <div className=" w-full justify-center items-center flex flex-col pb-10 ">
+    <div className="text-cyan-600 text-2xl  pt-8 font-bold pb-16">All Organic</div>
+    <h1 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 pb-16 ">
       <div className="text-transparent bg-clip-text bg-gradient-to-t from-gray-900 via-gray-300 to-gray-100 text-center ">Cut through the noise </div> 
     </h1>
     <div className="flex items-center justify-center h-[100px]">
@@ -196,7 +196,7 @@ export default function Home() {
 
   
   
-  <div className="p-5">
+  <div className="pt-5 w-full">
     <FlipCardComponent services={services} />
   </div>
 
