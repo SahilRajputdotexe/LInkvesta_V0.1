@@ -8,7 +8,7 @@ interface DisplayIconProps {
 
 const DisplayIcon = ({ name, img_src }: DisplayIconProps) => {
   return (
-    <div className="flex flex-col  items-center justify-center w-24 sm:w-32 md:w-48 lg:w-100">
+    <div className="flex flex-col m-6 items-center justify-center w-24 sm:w-32 md:w-48 lg:w-100">
       <Image
         src={img_src}
         alt={name}

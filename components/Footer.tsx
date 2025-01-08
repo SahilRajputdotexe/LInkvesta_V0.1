@@ -90,6 +90,7 @@ const Footer: React.FC = () => (
           <FaTwitter className="text-2xl hover:text-cyan-500 transition-colors duration-200" />
         </Link>
       </div>
+      
     </div>
   </footer>
 );
