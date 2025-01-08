@@ -77,21 +77,23 @@ export default function Home() {
     </h1>
   </div>
 
-  <div className="flex items-center justify-center space-x-2 flex-row p-8 pl-4 pr-4 lg:pl-20 lg:pr-20 h-[900px]">
+  <div className="flex items-center justify-center space-x-2 flex-col lg:flex-row p-8 pl-4 pr-4 lg:pl-20 lg:pr-20 pb-40 ">
+    <div>
     <Hero>
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-32 mt-32 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-3xl font-bold mb-4 mt-0 lg:mb-32 lg:mt-32 text-center">
           <span className="text-transparent bg-clip-text bg-gradient-to-t from-gray-400 to-gray-100">We help you </span>
           <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400"> Get Noticed</span>
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl mb-36">Our team helps you stand out and become a thought leader in your industry which will help you hire better, get leads, and investment.</p>
+        <p className="text-lg sm:text-xl md:text-2xl mb-4 lg:mb-36">Our team helps you stand out and become a thought leader in your industry which will help you hire better, get leads, and investment.</p>
       </div>
     </Hero>
+    </div>
 
     <div className="flex items-center justify-center space-y-8 flex-col p-6">
       <Hero>
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-24 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold lg:mb-24 text-center">
             <span className="text-transparent bg-clip-text bg-gradient-to-t from-gray-400 to-gray-100">We help you </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400"> Get Noticed</span>
           </h1>
@@ -111,9 +113,18 @@ export default function Home() {
     </div>
   </div>
 
-  <div>
+  <div >
     <LaptopMockup />
   </div>
+
+  <div className="justify-center items-center pt-72 pb-24">
+    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-center">
+      <span className="text-transparent bg-clip-text bg-gradient-to-t from-gray-400 to-gray-100">Our </span> 
+      <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400">
+        Process </span>
+    </h1>
+  </div>
+
 </div>
 
 
