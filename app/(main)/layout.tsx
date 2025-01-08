@@ -11,7 +11,7 @@ const MainLayout= async(
             <div className="flex flex-col   ">
                 <NavbarComponent/>
             </div>
-            <main className="py-[40px] w-full">
+            <main className="py-[40px] w-full overflow-hidden">
                 {children}
             </main>
             

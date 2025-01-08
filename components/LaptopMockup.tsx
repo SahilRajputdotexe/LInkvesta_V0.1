@@ -13,7 +13,7 @@ export const LaptopMockup=async()=> {
         />
   
         {/* Mockup Window */}
-        <div className="artboard rounded-xl bg-black border h-[285px] w-[445px] absolute top-[42px] left-[80px]">
+        <div className="hidden artboard rounded-xl bg-black border h-[285px] w-[445px] absolute top-[42px] left-[80px]">
           {/* Window Content */}
           <div className="bg-black rounded-xl flex justify-center px-4 py-16">
           </div>
