@@ -72,18 +72,18 @@ export default function Home() {
  
   
   return (
-<div className=" flex flex-col items-center pt-28 w-full">
-  <div className="flex items-center justify-center flex-col space-y-8">
-    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-center">
-      <span className="text-pretty text-transparent bg-clip-text bg-gradient-to-t from-gray-400 to-gray-100">Let&apos;s make you a </span> 
+<div className=" flex flex-col items-center pt-56 w-full">
+  <div className="flex items-center justify-center flex-col space-y-8 w-full">
+    <h1 className="text-4xl w-full sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-4 text-center">
+      <span className=" w-full text-pretty text-transparent bg-clip-text bg-gradient-to-t from-gray-400 to-gray-100">Let&apos;s make you a </span> 
       <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400">
         Brand
       </span>
     </h1>
     
-    <div className="flex items-center justify-center pb-24 ">
-      <div className="text-center max-w-screen-md w-full overflow-x">
-        <p className="lg:text-sm sm:text-2xl md:text-xl mb-6">We help founders and CXOs unlock the power of their personal brands, one post at a time.</p>
+    <div className=" w-full flex items-center justify-center pb-24 pt-8">
+      <div className="text-center  w-full overflow-x">
+        <p className=" w-full lg:text-xl sm:text-2xl md:text-xl mb-6">We help founders and CXOs unlock the power of their personal brands, one post at a time.</p>
       </div>
     </div>
 
@@ -96,12 +96,12 @@ export default function Home() {
 
   </div>
 
-  <div className="flex items-center justify-center flex-col lg:flex-row p-20">
-    <div className="flex lg:block justify-center items-cemter w-full">
+  <div className="flex items-center justify-center w-full flex-col lg:flex-row pt-32 pb-32">
+    <div className="flex lg:block justify-center items-cemter  p-16">
     <PhoneMockup />
     </div>
     <div className="h-full w-full">
-    <div className="pt-12 w-full justify-center items-center flex flex-col w-500">
+    <div className="pt-12 w-full justify-center items-center flex flex-col ">
     <div className="text-cyan-600 text-2xl pb-8 pt-8 font-bold ">All Organic</div>
     <h1 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 pb-8 ">
       <div className="text-transparent bg-clip-text bg-gradient-to-t from-gray-900 via-gray-300 to-gray-100 text-center ">Cut through the noise </div> 
@@ -112,7 +112,7 @@ export default function Home() {
       </div>
     </div>
     </div>
-    <div className="lg:pl-64  lg:w-12 flex items-center justify-center flex-row space-x-8 sm:space-x-16 md:space-x-32  pt-24  ">
+    <div className=" flex items-center justify-center flex-row space-x-8 sm:space-x-16 md:space-x-32  pt-24  ">
     <IncreaseNumberAnimation endNumber={102} speed={100} suffix="K" text="Followers"/>
     <IncreaseNumberAnimation endNumber={34} speed={100} text="Countries"/>
     <IncreaseNumberAnimation endNumber={181} speed={100} text="Clients"/>

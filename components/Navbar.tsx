@@ -9,14 +9,14 @@ export const NavbarComponent=()=>{
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
     return(
         <nav className="bg-black shadow-md p-4 top-0 w-full z-50 xs:w-screen">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
+        <div className="  flex justify-between items-center">
           <Link href="/" className="text-xl font-bold flex flex-row">
             <Image src="/linkvenza_logo.jpeg" width={200} height={50} alt="logo" />
           </Link>
   
           {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-8 text-base pr-32 font-semibold">
-            <Link href="/" className="ml-24">Home</Link>
+            <Link href="/" className="ml-24 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400 ">Home</Link>
             <Link href="/about">About Us</Link>
             <Link href="/services">Services</Link>
             <Link href="/testimonials">Testimonials</Link>
@@ -24,13 +24,13 @@ export const NavbarComponent=()=>{
           </div>
   
           {/* Mobile Hamburger Button */}
-          <div className="lg:hidden flex items-center">
+          <div className="lg:hidden flex items-center ">
             <button onClick={toggleMenu} className="text-white">
               <span className="text-2xl">{isMenuOpen ? '×' : '☰' }</span>
             </button>
           </div>
-          <div className="hidden lg:block">
-          <Link href="/contact" className="btn btn-md text-base bg-clip-border bg-gradient-to-br from-cyan-700 via-cyan-600 to-cyan-300 text-white font-semibold  rounded-lg hover:opacity-80 hover:text-gray-200 transition-all duration-500">Contact Us</Link>
+          <div className="hidden lg:flex items-end">
+          <Link href="/contact" className="btn  btn-md text-base bg-clip-border bg-gradient-to-br from-cyan-700 via-cyan-600 to-cyan-300 text-white font-semibold  rounded-lg hover:opacity-80 hover:text-gray-200 transition-all duration-500">Contact Us</Link>
             </div>
         </div>
   
