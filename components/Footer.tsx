@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+
 
 const Footer: React.FC = () => (
   <footer className="footer bg-neutral-950 text-neutral-content p-10 flex flex-row lg:flex-wrap justify-between gap-8">
@@ -74,6 +76,21 @@ const Footer: React.FC = () => (
         </li>
       </ul>
     </nav>
+
+    <div className="hidden  lg:flex w-full sm:w-auto  flex-col items-center sm:items-start">
+      <h6 className="footer-title text-lg font-bold mb-4">Follow Us</h6>
+      <div className="flex space-x-4">
+        <Link href="https://www.instagram.com" aria-label="Instagram" target="_blank">
+          <FaInstagram className="text-2xl hover:text-cyan-500 transition-colors duration-200" />
+        </Link>
+        <Link href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank">
+          <FaLinkedin className="text-2xl hover:text-cyan-500 transition-colors duration-200" />
+        </Link>
+        <Link href="https://www.twitter.com" aria-label="Twitter" target="_blank">
+          <FaTwitter className="text-2xl hover:text-cyan-500 transition-colors duration-200" />
+        </Link>
+      </div>
+    </div>
   </footer>
 );
 

@@ -12,7 +12,7 @@ export const LaptopMockup=async()=> {
           className="w-full h-auto"
         />
   
-        <div className="hidden md:block artboard rounded-xl bg-black border h-[285px] w-[445px] absolute top-[42px] left-[80px]">
+        <div className=" artboard rounded-xl bg-black border absolute top-[8%] left-[12%] w-[76%] h-[67%] sm:top-[42px] sm:left-[80px] sm:w-[445px] sm:h-[285px]">
       
           <div className="bg-black rounded-xl flex justify-center px-4 py-16">
           </div>
