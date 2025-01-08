@@ -72,51 +72,60 @@ export default function Home() {
  
   
   return (
-<div className="text-white flex flex-col items-center pt-28 w-full">
-  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-center">
-    <span className="text-transparent bg-clip-text bg-gradient-to-t from-gray-400 to-gray-100">Let&apos;s make you a </span> 
-    <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400">
-      Brand
-    </span>
-  </h1>
-  
-  <div className="flex items-center justify-center h-[100px]">
-    <div className="text-center max-w-screen-md w-full overflow-x">
-      <p className="text-lg sm:text-2xl md:text-3xl mb-6">We help founders and CXOs unlock the power of their personal brands, one post at a time.</p>
+<div className=" flex flex-col items-center pt-28 w-full">
+  <div className="flex items-center justify-center flex-col space-y-8">
+    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-center">
+      <span className="text-pretty text-transparent bg-clip-text bg-gradient-to-t from-gray-400 to-gray-100">Let&apos;s make you a </span> 
+      <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400">
+        Brand
+      </span>
+    </h1>
+    
+    <div className="flex items-center justify-center pb-24 ">
+      <div className="text-center max-w-screen-md w-full overflow-x">
+        <p className="lg:text-sm sm:text-2xl md:text-xl mb-6">We help founders and CXOs unlock the power of their personal brands, one post at a time.</p>
+      </div>
     </div>
+
+    <button className="bg-clip-border bg-gradient-to-br from-cyan-700 via-cyan-600 to-cyan-300 font-semibold py-3 px-6 rounded-lg hover:opacity-80 hover:text-gray-200 transition-all duration-500 text-shadow  ">
+      <span className="relative">
+        <span className="absolute inset-0 bg-opacity-25 rounded-md"></span>
+        <span className="relative ">Get In Touch</span>
+      </span>
+    </button>
+
   </div>
 
-  <button className="bg-clip-border bg-gradient-to-br from-cyan-700 via-cyan-600 to-cyan-300 text-white font-semibold py-3 px-6 rounded-lg hover:opacity-80 hover:text-gray-200 transition-all duration-500">
-    Get In Touch
-  </button>
-
-  <div className="flex items-center justify-center flex-col p-20">
+  <div className="flex items-center justify-center flex-col lg:flex-row p-20">
+    <div className="flex lg:block justify-center items-cemter w-full">
     <PhoneMockup />
-  </div>
-
-  <div className="justify-center items-center flex flex-col">
-    <div className="text-cyan-600 text-2xl pb-8 font-bold">All Organic</div>
-    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 pb-8 text-center">
-      <span className="text-transparent bg-clip-text bg-gradient-to-t from-gray-900 via-gray-300 to-gray-100">Cut through the noise </span> 
+    </div>
+    <div className="h-full w-full">
+    <div className="pt-12 w-full justify-center items-center flex flex-col w-500">
+    <div className="text-cyan-600 text-2xl pb-8 pt-8 font-bold ">All Organic</div>
+    <h1 className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 pb-8 ">
+      <div className="text-transparent bg-clip-text bg-gradient-to-t from-gray-900 via-gray-300 to-gray-100 text-center ">Cut through the noise </div> 
     </h1>
     <div className="flex items-center justify-center h-[100px]">
       <div className="text-center max-w-screen-md w-full overflow-x">
         <p className="text-lg sm:text-2xl md:text-3xl mb-6">Our team helps you stand out and become a thought leader in your industry which will help you hire better, get leads, and investment.</p>
       </div>
     </div>
-  </div>
-
-  <div className="flex items-center justify-center flex-row space-x-8 sm:space-x-16 md:space-x-32 p-4 pt-24">
+    </div>
+    <div className="lg:pl-64  lg:w-12 flex items-center justify-center flex-row space-x-8 sm:space-x-16 md:space-x-32  pt-24  ">
     <IncreaseNumberAnimation endNumber={102} speed={100} suffix="K" text="Followers"/>
     <IncreaseNumberAnimation endNumber={34} speed={100} text="Countries"/>
     <IncreaseNumberAnimation endNumber={181} speed={100} text="Clients"/>
   </div>
+  </div>
+  
+  </div>
 
     <div className="flex flex-col  items-center justify-center pt-12 ">
-      <span className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400">
+      <span className=" flex items-center justify-center text-center text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400">
         Our Partners in Success
       </span>
-      <div className="flex items-center justify-center flex-col lg:flex-row space-x-4 sm:space-x-8 md:space-x-16 p-4 pt-12">
+      <div className="flex items-center justify-center flex-col lg:flex-row space-x-4 sm:space-x-8 md:space-x-16 p-4 lg:pt-36 pt-12 lg:pb-12">
         <div className="flex flex-row space-x-8 justify-center items-center w-full ">
         <DisplayIcon name="GroomYourGram"  img_src="/GYG.jpeg"/>
         <DisplayIcon name="BookMyShow" img_src="/bookmyshow-logo-vector.svg"/>
@@ -173,17 +182,19 @@ export default function Home() {
     </div>
   </div>
 
-  <div >
+  <div className="lg:flex lg:flex-row">
+    
+    <div className="justify-center items-center pt-72 pb-24 lg:pr-20 ">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-center">
+        <span className="text-transparent bg-clip-text bg-gradient-to-t from-gray-400 to-gray-100">Our </span> 
+        <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400">
+          Process </span>
+      </h1>
+    </div>
     <LaptopMockup />
   </div>
 
-  <div className="justify-center items-center pt-72 pb-24">
-    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-center">
-      <span className="text-transparent bg-clip-text bg-gradient-to-t from-gray-400 to-gray-100">Our </span> 
-      <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400">
-        Process </span>
-    </h1>
-  </div>
+  
   
   <div className="p-5">
     <FlipCardComponent services={services} />

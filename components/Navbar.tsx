@@ -30,7 +30,7 @@ export const NavbarComponent=()=>{
             </button>
           </div>
           <div className="hidden lg:block">
-          <Link href="/contact" className="btn btn-md text-base bg-[#35747D] opacity-100 text-white hover:bg-[#35747D] hover:opacity-80 transition-opacity duration-500">Contact Us</Link>
+          <Link href="/contact" className="btn btn-md text-base bg-clip-border bg-gradient-to-br from-cyan-700 via-cyan-600 to-cyan-300 text-white font-semibold  rounded-lg hover:opacity-80 hover:text-gray-200 transition-all duration-500">Contact Us</Link>
             </div>
         </div>
   

@@ -13,6 +13,7 @@ export default {
   ],
   theme: {
   	extend: {
+		
       
       animation: {
         'gradient': 'gradient 8s linear infinite',

@@ -1,5 +1,5 @@
 import './globals.css';
-
+import '@fontsource/inter'; 
 
 import { ThemeProvider } from '@/components/providers/theme-provider';
 
