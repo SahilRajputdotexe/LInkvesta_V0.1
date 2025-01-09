@@ -75,3 +75,23 @@ body {
 #page{
   overflow: hidden;
 }
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-gradient-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6347, #ff1493, #1e90ff, #ff6347);
+  background-size: 500% 100%;
+  background-position: 200% 0;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 1s ease infinite; 
+}
