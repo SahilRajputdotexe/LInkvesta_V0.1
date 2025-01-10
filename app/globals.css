@@ -79,7 +79,7 @@ body {
 
 @keyframes gradientAnimation {
   0% {
-    background-position: 200% 0;
+    background-position: 400% 0;
   }
   100% {
     background-position: -200% 0;
@@ -87,11 +87,141 @@ body {
 }
 
 .animate-gradient-text {
-  font-weight: bold;
-  background: linear-gradient(90deg, #ff6347, #ff1493, #1e90ff, #ff6347);
-  background-size: 500% 100%;
-  background-position: 200% 0;
+  background: linear-gradient(90deg, #35747D,rgb(211, 208, 208), rgb(2, 157, 157));
+  background-size: 200% auto;
   -webkit-background-clip: text;
-  color: transparent;
-  animation: gradientAnimation 1s ease infinite; 
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-text 3s linear infinite;
+}
+
+.gradient-text {
+  animation: gradient-text 3s linear infinite;
+}
+
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+
+
+.container {
+  width: 500px;
+  margin: -30px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, rgb(59, 59, 59),rgb(81, 80, 80));
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.05);
+  border: 2px solid #35747D; /* Add a cyan border */
+  box-shadow: 0 0 10px #35747D; 
+}
+
+.container:focus-within {
+  box-shadow: 0 0 20px#35747D; 
+}
+
+.title {
+  color: #35747D;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #bbb;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #2b2b2b;
+  color: #fff;
+  font-size: 14px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #35747D;
+  background-color: #333;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+}
+
+button {
+  background: linear-gradient(145deg, #35747D, #35747D);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 255, 136, 0.3);
+}
+
+.message {
+  color: #bbb;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
 }

@@ -6,12 +6,12 @@ export default function About() {
     return (
       <div className="p-6">
       <div className="text-white flex flex-col items-center pt-0 w-full">
-  <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-7xl font-bold mb-4 text-center animate-gradient-text">
-    <span className="text-transparent bg-clip-text bg-gradient-to-t from-gray-400 to-gray-100">About </span> 
-    <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400">
-      Us
-    </span>
-  </h1>
+      <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-7xl font-bold mb-4 text-center">
+  <span className="text-transparent bg-clip-text bg-gradient-to-t from-gray-400 to-gray-100 animate-gradient-text">About </span> 
+  <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#35747D] via-cyan-600 to-gray-400 animate-gradient-text">
+    Us
+  </span>
+</h1>
   </div>
 
         <div className="mt-8 flex justify-center">

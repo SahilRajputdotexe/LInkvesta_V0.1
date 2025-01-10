@@ -7,8 +7,13 @@ import { LaptopMockup } from "@/components/LaptopMockup";
 import IncreaseNumberAnimation from "@/components/NumberScroller";
 
 import  PhoneMockup  from "@/components/PhoneMockup";
+import Link from "next/link";
+
+
+
 
 export default function Home() {
+
   
   const services = [
     {
@@ -86,9 +91,12 @@ export default function Home() {
     </div>
   </div>
 
-  <button className="bg-clip-border bg-gradient-to-br from-cyan-700 via-cyan-600 to-cyan-300 text-white font-semibold py-3 px-6 rounded-lg hover:opacity-80 hover:text-gray-200 transition-all duration-500">
-    Get In Touch
-  </button>
+
+  <button
+  className="bg-clip-border bg-gradient-to-br from-cyan-700 via-cyan-600 to-cyan-300 text-white font-semibold py-3 px-6 rounded-lg hover:opacity-80 hover:text-gray-200 transition-all duration-500"
+>
+  <Link href="/contact">Get In Touch</Link>
+</button>
 
   <div className="flex items-center justify-center flex-col p-20">
     <PhoneMockup />
@@ -107,9 +115,9 @@ export default function Home() {
   </div>
 
   <div className="flex items-center justify-center flex-row space-x-8 sm:space-x-16 md:space-x-32 p-4 pt-24">
-    <IncreaseNumberAnimation endNumber={102} speed={100} suffix="K" text="Followers"/>
-    <IncreaseNumberAnimation endNumber={34} speed={100} text="Countries"/>
-    <IncreaseNumberAnimation endNumber={181} speed={100} text="Clients"/>
+    <IncreaseNumberAnimation endNumber={102} speed={50} suffix="K" text="Followers"/>
+    <IncreaseNumberAnimation endNumber={34} speed={40} text="Countries"/>
+    <IncreaseNumberAnimation endNumber={181} speed={40} text="Clients"/>
   </div>
 
     <div className="flex flex-col  items-center justify-center pt-12 ">
