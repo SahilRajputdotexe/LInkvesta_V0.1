@@ -7,7 +7,7 @@ import { LaptopMockup } from "@/components/LaptopMockup";
 import IncreaseNumberAnimation from "@/components/NumberScroller";
 
 import  PhoneMockup  from "@/components/PhoneMockup";
-import Link from "next/link";
+
 
 
 
